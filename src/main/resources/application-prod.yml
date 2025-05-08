@@ -3,7 +3,7 @@ server:
 
 spring:
   config:
-    import: aws-secretsmanager:/prod/johanwork/db/customer?prefix=db.
+    import: aws-secretsmanager:/prod/metadata/db/customer?prefix=db.
   datasource:
     url: jdbc:postgresql://${db.host:localhost}:5432/customer
     username: ${db.username}
